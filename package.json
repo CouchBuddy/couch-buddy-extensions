@@ -2,11 +2,16 @@
   "name": "couch-buddy-extensions",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+	"typings": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
+    "prepare": "npm run build"
   },
   "keywords": [],
   "author": "Luca Faggianelli",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.9.2"
+  }
 }

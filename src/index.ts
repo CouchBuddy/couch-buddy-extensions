@@ -101,7 +101,7 @@ export interface Movie {
   updatedAt?: Date;
 }
 
-export class CouchBuddyExtension {
-  name: string;
-  explore(query: string): Promise<Movie[]>;
+export abstract class CouchBuddyExtension {
+  abstract name: string;
+  abstract explore (query: string): Promise<Movie[]>;
 }
