@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
-	"typings": "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build"
+    "prepublish": "npm run build"
   },
   "keywords": [],
   "author": "Luca Faggianelli",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^3.9.2"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
