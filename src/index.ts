@@ -102,6 +102,8 @@ export interface Movie {
 }
 
 export abstract class CouchBuddyExtension {
+  constructor () {}
+
   abstract name: string;
   abstract explore (query: string): Promise<Movie[]>;
 }
